@@ -1,0 +1,24 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hello", "hi", "hey", "good morning"],
+      "responses": ["Hello! I am Allo AI.", "Hi! How can I help you?"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["what is your name", "who are you"],
+      "responses": ["I am Allo 1.0 AI."]
+    },
+    {
+      "tag": "python",
+      "patterns": ["what is python", "tell me about python"],
+      "responses": ["Python is a popular programming language used for AI, games, and apps."]
+    },
+    {
+      "tag": "ai",
+      "patterns": ["what is ai", "explain artificial intelligence"],
+      "responses": ["AI is technology that allows computers to learn and solve problems."]
+    }
+  ]
+}
