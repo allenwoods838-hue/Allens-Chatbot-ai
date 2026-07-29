@@ -14,16 +14,44 @@ Allo AI is a Python chatbot project with two models:
 
 ## Features
 - Python CLI chatbot
-- Simple AI architecture
+- TensorFlow/Keras neural network training
 - Training data support
+- Saved AI model (`allo_model.h5`)
 - Easy to customize
 
 ## Setup
 
+Create the TensorFlow environment:
+
 ```bash
-python3 -m venv allo_env
-source allo_env/bin/activate
+python3.12 -m venv tf_env
+source tf_env/bin/activate
+```
+
+Windows PowerShell:
+
+```powershell
+.\tf_env\Scripts\Activate.ps1
+```
+
+Install packages:
+
+```bash
 pip install -r requirements.txt
+```
+
+## Train Allo Neural Network
+
+```bash
+python train.py
+```
+
+This creates:
+
+```
+allo_model.h5
+ tokenzier.pkl
+labels.pkl
 ```
 
 ## Run
@@ -43,12 +71,14 @@ python allo_pro.py
 ```
 allo_fast.py      # Allo 1.0 Fast
 allo_pro.py       # Allo 1.0 Pro
+train.py          # TensorFlow/Keras trainer
 train_data.json   # Training examples
 requirements.txt  # Python packages
+allo_model.h5     # Trained model output
 ```
 
 ## Roadmap
-- Neural network training
 - Better memory
 - Web chatbot interface
 - Allo API
+- Larger AI models
